@@ -14,7 +14,7 @@ const BookDetails = () => {
   return book ? (
     <div className="row">
       <div className="col-sm-12">
-        <h1>Details for Book ID {book.id}</h1>
+        <h1>Details voor vakantie {book.id}</h1>
         <hr/>
         <h3>Author</h3>
         <p className="lead">{book.title}</p>
@@ -22,7 +22,7 @@ const BookDetails = () => {
         <p className="lead">{book.author}</p>
         <hr/>
         <p>
-          <Link to="/">&laquo; back to list</Link>
+          <Link to="/">&laquo; terug naar het overzicht</Link>
         </p>
       </div>
     </div>

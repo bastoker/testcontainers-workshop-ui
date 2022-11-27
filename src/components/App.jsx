@@ -1,5 +1,4 @@
 import { BrowserRouter } from "react-router-dom";
-import BookBox from "../components/BookBox";
 import RenderOnAnonymous from "./RenderOnAnonymous";
 import RenderOnAuthenticated from "./RenderOnAuthenticated";
 import Holidays from "./Holidays";
@@ -12,7 +11,7 @@ const App = () => (
           <Welcome/>
         </RenderOnAnonymous>
         <RenderOnAuthenticated>
-          <Holidays/>{/* <BookBox/> */}
+          <Holidays/>
         </RenderOnAuthenticated>
       </div>
     </BrowserRouter>

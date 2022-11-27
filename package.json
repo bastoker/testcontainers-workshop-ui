@@ -9,9 +9,9 @@
     "lint": "eslint --ext .js,.jsx \"src/\""
   },
   "author": {
-    "name": "Niko Köbler",
-    "email": "niko@n-k.de",
-    "url": "https://www.n-k.de"
+    "name": "Bas Stoker",
+    "email": "bas.stoker@j-next.nl",
+    "url": "https://j-next.nl"
   },
   "license": "MIT",
   "devDependencies": {
@@ -23,6 +23,7 @@
   "dependencies": {
     "axios": "^0.26.1",
     "keycloak-js": "^20.0.0",
+    "moment": "^2.29.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.1.3",

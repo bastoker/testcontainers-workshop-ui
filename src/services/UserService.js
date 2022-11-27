@@ -43,7 +43,10 @@ const initKeycloak = (onAuthenticatedCallback, callbackWhenKeycloakIsFinished) =
        console.log(_kc);
     })
     .then(() => initKeycloakInner())
-    .then(() => callbackWhenKeycloakIsFinished());
+    .then(() => callbackWhenKeycloakIsFinished())
+    .catch(error => {
+          console.error('There was an error. Vakantieplanner Backend is unavailable!', error);
+  });
 };
 
 const doLogin = () => _kc.login();
