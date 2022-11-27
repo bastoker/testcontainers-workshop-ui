@@ -17,7 +17,7 @@ const transformToFlatList = (memberWithHolidaysList) =>
         }
       )
     )
-  );  
+  );
 
 const AllHolidayList = () => {
   Moment.locale('nl');

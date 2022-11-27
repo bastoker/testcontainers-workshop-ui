@@ -17,7 +17,7 @@ const Menu = () => (
           Logout
         </button>
         <p className="navbar-text navbar-right" style={{ marginRight: 15 }}>
-          Signed in as <b>{UserService.getUsername()}</b>
+          Ingelogd als <b>{UserService.getUsername()}</b>
         </p>
       </div>
     </div>
