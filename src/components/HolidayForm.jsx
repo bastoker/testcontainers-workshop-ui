@@ -70,7 +70,7 @@ const HolidayForm = () => {
                    value={to} onChange={(e) => setTo(e.target.value)}/>
           </div>
 
-          <RenderOnRole roles={['user']}>
+          <RenderOnRole roles={['user', 'superuser']}>
             <button type="submit" className="btn btn-primary">Vakantie toevoegen</button>
           </RenderOnRole>
         </form>

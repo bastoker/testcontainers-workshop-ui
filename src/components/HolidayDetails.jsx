@@ -11,7 +11,7 @@ const HolidayDetails = () => {
   const history = useHistory();
 
   const { holidayId } = useParams();
-  const [holiday, setHoliday] = useState({id: holidayId, description: "", from: null, to: null});
+  const [holiday, setHoliday] = useState({id: holidayId, description: "", from: '', to: ''});
 
   const updateDescription = (d) => {
     setHoliday({...holiday, description: d})
@@ -91,7 +91,7 @@ const HolidayDetails = () => {
                    value={holiday.to} onChange={(e) => updateTo(e.target.value)}/>
           </div>
 
-          <button type="submit" className="btn btn-primary">Vakantie toevoegen</button>
+          <button type="submit" className="btn btn-primary">Vakantie aanpassen</button>
         </form>
       </div>
     </div>

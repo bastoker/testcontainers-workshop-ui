@@ -10,14 +10,14 @@ const Menu = () => (
       <div id="navbar">
         <ul className="nav navbar-nav">
           <li><Link to="/">Mijn vakanties</Link></li>
-          <li><Link to="/books/new">Nieuwe vakantie</Link></li>
-          <li><Link to="/secret">Admin only</Link></li>
+          <li><Link to="/holiday/new">Nieuwe vakantie</Link></li>
+          <li><Link to="/holidays/all">Admin only</Link></li>
         </ul>
         <button className="btn btn-success navbar-btn navbar-right" style={{ marginRight: 0 }} onClick={() => UserService.doLogout()}>
           Logout
         </button>
         <p className="navbar-text navbar-right" style={{ marginRight: 15 }}>
-          Signed in as {UserService.getUsername()}
+          Signed in as <b>{UserService.getUsername()}</b>
         </p>
       </div>
     </div>

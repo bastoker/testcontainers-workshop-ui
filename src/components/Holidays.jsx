@@ -1,11 +1,11 @@
 import { Route, Switch } from "react-router-dom";
 import HolidayDetails from "./HolidayDetails";
-import BookForm from "./HolidayForm";
+import HolidayForm from "./HolidayForm";
 import HolidayList from "./HolidayList";
+import AllHolidayList from "./AllHolidayList";
 import Menu from "./Menu";
 import NoMatch from "./NoMatch";
 import RolesRoute from "./RolesRoute";
-import SecretBooks from "./SecretBooks";
 
 const Holidays = () => (
   <>
@@ -14,14 +14,14 @@ const Holidays = () => (
       <Route exact path="/">
         <HolidayList/>
       </Route>
-      <Route exact path="/books/new">
-        <BookForm/>
+      <Route exact path="/holiday/new">
+        <HolidayForm/>
       </Route>
       <Route path="/holiday/:holidayId">
         <HolidayDetails/>
       </Route>
-      <RolesRoute path="/secret" roles={['admin']}>
-        <SecretBooks/>
+      <RolesRoute path="/holidays/all" roles={['superuser']}>
+        <AllHolidayList/>
       </RolesRoute>
       <Route path="*">
         <NoMatch/>
