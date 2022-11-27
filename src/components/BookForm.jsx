@@ -1,7 +1,5 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { useHistory } from "react-router";
-import { addBook } from "../modules/books";
+import { useEffect, useState } from "react";
+import { useHistory } from 'react-router-dom';
 import RenderOnRole from "./RenderOnRole";
 
 const BookForm = () => {
@@ -9,7 +7,6 @@ const BookForm = () => {
   const [author, setAuthor] = useState('');
   const [title, setTitle] = useState('');
 
-  const dispatch = useDispatch();
   const history = useHistory();
 
   const handleSubmit = (event) => {
@@ -17,8 +14,9 @@ const BookForm = () => {
     if (!author || !title) {
       return;
     }
-    dispatch(addBook({ author, title }))
-      .then(() => history.push("/"))
+    // save item here with REST call
+    // and subsequently call 
+    // () => history.push("/")
   };
 
   return (
@@ -45,4 +43,4 @@ const BookForm = () => {
   );
 }
 
-export default BookForm
+export default BookForm;

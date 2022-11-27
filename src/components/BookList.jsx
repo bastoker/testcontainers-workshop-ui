@@ -1,15 +1,16 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { allBooks, deleteBook } from "../modules/books";
 
 const BookList = () => {
 
-  const dispatch = useDispatch();
-  const { books } = useSelector((state) => state);
+  const [books, setBooks] = useState([{id: '123', title: 'Dummy Book Title', author: 'Dummy author'}]);
+
+  const deleteBook = (book) => {
+    // save book here
+  };
 
   useEffect(() => {
-    dispatch(allBooks())
+    // retrieve items here
   }, []);
   
   return (
@@ -34,7 +35,7 @@ const BookList = () => {
               </td>
               <td>{book.author}</td>
               <td>
-                <button className="btn btn-xs btn-danger" onClick={() => dispatch(deleteBook(book))}>
+                <button className="btn btn-xs btn-danger" onClick={() => deleteBook(book)}>
                   Delete Book
                 </button>
               </td>
@@ -47,4 +48,4 @@ const BookList = () => {
   );
 }
 
-export default BookList
+export default BookList;

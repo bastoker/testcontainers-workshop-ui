@@ -1,23 +1,15 @@
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
-import { allBooks } from '../modules/books';
 
 const BookDetails = () => {
-
   const { bookId } = useParams();
-  const dispatch = useDispatch();
-  const { books } = useSelector((state) => state);
-  const [book, setBook] = useState();
+  const [book, setBook] = useState({title: 'Tijdelijke titel', author: 'Tijdelijke auteur'});
 
   useEffect(() => {
-    dispatch(allBooks())
-  }, []);
-
-  useEffect(() => {
-    setBook(books.find(book => book.id === parseInt(bookId, 10)))
-  }, [bookId, books]);
+    // retrieve books here?
+   
+  }, [bookId]);
 
   return book ? (
     <div className="row">
@@ -37,4 +29,4 @@ const BookDetails = () => {
   ) : null
 }
 
-export default BookDetails
+export default BookDetails;
