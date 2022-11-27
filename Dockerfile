@@ -1,4 +1,4 @@
-FROM node:v16.18.1 as build
+FROM node:16.18 as build
 
 WORKDIR /app
 
@@ -11,4 +11,5 @@ RUN npm run build
 
 
 FROM nginx
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/build /usr/share/nginx/html

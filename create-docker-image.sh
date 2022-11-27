@@ -1,2 +1,3 @@
 #!/bin/zsh
-docker build .
+docker build -t vakantieplanner-ui .
+# docker push <dockerid>/nginx-frontend
