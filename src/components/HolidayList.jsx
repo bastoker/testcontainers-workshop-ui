@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useHistory } from 'react-router-dom';
 import HttpService from "../services/HttpService";
 import UserService from "../services/UserService";
+import CalendarView from "./calendar/CalendarView";
 import Moment from 'moment';
 
 const HolidayList = () => {
@@ -47,6 +48,9 @@ useEffect(() => {
     <div className="row">
       <div className="col-sm-12">
         <h1>Overzicht</h1>
+
+        <CalendarView />
+
         <table className="table table-striped">
           <thead>
           <tr>

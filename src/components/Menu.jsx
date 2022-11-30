@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import UserService from "../services/UserService";
 
 const Menu = () => (
+
   <nav className="navbar navbar-default">
     <div className="container-fluid">
       <div className="navbar-header">
-        <Link className="navbar-brand" to="/">Vakantieplanner</Link>
+
+        <Link className="navbar-brand" to="/"><span>Vakantieplanner</span></Link>
       </div>
       <div id="navbar">
         <ul className="nav navbar-nav">

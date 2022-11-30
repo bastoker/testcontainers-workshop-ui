@@ -27,3 +27,6 @@ docker run -p 8081:8080 suffix/testcontainers-workshop-ui:1.0.1
 This starts a NGNIX HTTP server that serves the UI.
 
 Go to `http://localhost:8081/` in your favourite browser and don't forget to enjoy your holiday.
+
+## Style guide:
+https://vakantieplanner.zeroheight.com/
