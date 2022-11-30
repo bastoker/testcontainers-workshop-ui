@@ -49,7 +49,7 @@ useEffect(() => {
       <div className="col-sm-12">
         <h1>Overzicht</h1>
 
-        <CalendarView />
+{/*         <CalendarView /> */}
 
         <table className="table table-striped">
           <thead>

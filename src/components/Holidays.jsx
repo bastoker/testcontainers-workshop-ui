@@ -20,9 +20,9 @@ const Holidays = () => (
       <Route path="/holiday/:holidayId">
         <HolidayDetails/>
       </Route>
-      <RolesRoute path="/holidays/all" roles={['superuser']}>
+      <Route path="/holidays/all"> {/*       <RolesRoute path="/holidays/all" roles={['superuser']}> */}
         <AllHolidayList/>
-      </RolesRoute>
+      </Route>
       <Route path="*">
         <NoMatch/>
       </Route>

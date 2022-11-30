@@ -1,7 +1,7 @@
 import UserService from "../services/UserService";
 
 const Welcome = () => (
-  <div className="jumbotron" style={{position: 'relative'}}>
+  <div className="jumbotron">
     <h1>Vakantieplanner</h1>
     <p className="lead">Because we all deserve some time off, don't we?</p>
     <p>
@@ -13,4 +13,4 @@ const Welcome = () => (
   </div>
 )
 
-export default Welcome
+export default Welcome;

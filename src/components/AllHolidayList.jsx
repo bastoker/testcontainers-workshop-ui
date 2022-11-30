@@ -36,7 +36,7 @@ const AllHolidayList = () => {
     ]);
 
   const refreshListOfHolidays = () => {
-    axios.get(`http://localhost:8080/holidays/all`)
+    axios.get(`http://localhost:8080/holiday/all`)
     .then((response) => {
       setHolidays(transformToFlatList(response.data));
     });

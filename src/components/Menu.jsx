@@ -13,7 +13,7 @@ const Menu = () => (
         <ul className="nav navbar-nav">
           <li><Link to="/">Mijn vakanties</Link></li>
           <li><Link to="/holiday/new">Nieuwe vakantie</Link></li>
-          <li><Link to="/holidays/all">Admin only</Link></li>
+          <li><Link to="/holidays/all">Vakantie overzicht</Link></li>
         </ul>
         <button className="btn btn-success navbar-btn navbar-right" style={{ marginRight: 0 }} onClick={() => UserService.doLogout()}>
           Logout

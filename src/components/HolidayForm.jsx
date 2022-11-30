@@ -34,10 +34,13 @@ const HolidayForm = () => {
     )
     .then((response) => {
       console.log(response.data)
-    })
-    .then(() => {
       history.push("/")
-    });
+    })
+    .catch(function (error) {
+      if (error.response.status === 409) {
+        alert('Vakantie overlapt met een bestaande vakantie van een collega. Pech gehad :-(');
+      }
+    })
   };
 
   return (
