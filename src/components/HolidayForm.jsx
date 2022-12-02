@@ -56,7 +56,7 @@ const HolidayForm = () => {
           
 
           <div className="form-group">
-            <label htmlFor="description">Author</label>
+            <label htmlFor="description">Omschrijving vakantie</label>
             <input id="description" type="text" className="form-control" placeholder="Omschrijving"
                    value={description} onChange={(e) => setDescription(e.target.value)}/>
           </div>
